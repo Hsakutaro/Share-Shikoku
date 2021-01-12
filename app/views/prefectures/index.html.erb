@@ -1,9 +1,22 @@
-<div class="miryoku1">豊かな自然、美味しい食べ物、美しい景色</div>
+<div class="miryoku1">豊かな自然、美味しい食べ物、美しい景色...</div>
 <div class="miryoku2">あなたが見つけた四国の魅力、シェアしませんか？</div>
+
+<br>
+
+<div class="text-center">
+    <% if logged_in? %>
+        <p class="miryoku3">ようこそ、<%= current_user.name %>さん</p>
+    <% else %>
+        <p class="miryoku4">まずは、「新規登録」「ログイン」</p>
+        <%= link_to "新規登録",signup_path, class: 'btn-lg btn-info' %>
+        <%= link_to "ログイン",login_path, class: 'btn-lg btn-primary' %>
+    <% end %>
+</div>
+
+<br>
 
 <div class="visual">
     <div style="text-align: center">
-        <a href="img_path">
         <% @prefectures.each do |img| %>
             <% if logged_in? %>
                 <a href =<%= prefecture_path(img)%>>

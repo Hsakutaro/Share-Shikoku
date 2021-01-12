@@ -5,7 +5,7 @@
     <%= f.hidden_field :prefecture_id, :value => @prefecture.id %>
       <table>
         <tr>
-          <td><%= f.text_field :content, class: 'form-control', size:50, :placeholder => "5字以上30字以内" %></td>
+          <td><%= f.text_field :content, class: 'form-control', size:50, :placeholder => "〇〇が美味しい・〇〇が綺麗etc...（２０字以内）" %></td>
           <td><%= f.submit '投稿', class: 'btn btn-primary' %></td>
         <tr>
       </table>

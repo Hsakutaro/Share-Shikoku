@@ -1,5 +1,5 @@
 .visual img {
-	max-width:45%; /*画像のはみだしを防ぐ*/
+	max-width:48%; /*画像のはみだしを防ぐ*/
 	height: 400px;
 	width: 700px;
 }
@@ -10,7 +10,7 @@
     padding: 0;
     color: #333;
     font-size: 20px;
-    font-family: Tahoma;
+    font-family:serif;
 }
 .miryoku2 {
 	text-align:right;
@@ -18,7 +18,25 @@
     padding: 0;
     color: #333;
     font-size: 30px;
-    font-family: "Verdana";
+    font-family:serif;
+}
+
+.miryoku3 {
+	text-align:center;
+	margin: 0;
+    padding: 0;
+    color: #333;
+    font-size: 40px;
+    font-family:serif;
+}
+
+.miryoku3 {
+	text-align:center;
+	margin-top: 30px;
+    padding: 0;
+    color: #333;
+    font-size: 30px;
+    font-family:serif;
 }
 
 .title {
@@ -27,5 +45,13 @@
     padding: 0;
     color: #333;
     font-size: 30px;
-    font-family: "Verdana";
+    font-family:serif;
+}
+
+body {
+  background-color:  #F5FFFA;
+}
+
+header{
+  background-color:  #F5FFFA;
 }
