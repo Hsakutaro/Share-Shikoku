@@ -7,7 +7,7 @@ Rails.application.routes.draw do
 
   get 'signup', to: 'users#new'
   
-  post 'prefectures/:id', to: 'prefectures#show'
+  get 'prefectures/:id', to: 'prefectures#show'
   
   get 'users/:id', to: 'prefectures#show'
   
