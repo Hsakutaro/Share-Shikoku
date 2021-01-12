@@ -6,4 +6,7 @@ class User < ApplicationRecord
                       uniqueness: { case_sensitive: false }
     validates :password, presence: true, length: { minimum: 4 }
     has_secure_password
+    
+    has_many :posts
+    has_many :prefectures
 end

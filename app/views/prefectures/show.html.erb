@@ -1,0 +1,9 @@
+<h1>あなたが見つけた<%= @prefecture.name %> の魅力</h1>
+
+<div class="prefecture">
+   <div style="text-align: center">
+      <img src=<%= image_path(@prefecture.image) %> >
+   </div>
+</div>
+
+   <%= render 'posts/posts', posts: @posts %>
