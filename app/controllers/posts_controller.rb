@@ -8,7 +8,6 @@ class PostsController < ApplicationController
       flash[:success] = 'メッセージを投稿しました。'
       redirect_back(fallback_location: root_path)
       else
-    #   @posts = current_user.posts.order(id: :desc).page(params[:page])
       flash[:danger] = 'メッセージの投稿に失敗しました。'
       redirect_back(fallback_location: root_path)
     end
