@@ -20,9 +20,9 @@
         <% @prefectures.each do |img| %>
             <% if logged_in? %>
                 <a href =<%= prefecture_path(img)%>>
-                <img src=<%= image_path(img.image)%>></a>
+                <img src=<%= image_path(img.image)%> alt=””></a>
             <% else %>
-                <img src=<%= image_path(img.image)%>>
+                <img src=<%= image_path(img.image)%> alt=””>
             <% end %>
         <% end %>
 	</div>
